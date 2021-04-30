@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaa;
+}
+
+#container {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 24px 16px;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px 10px #444;
+}
+
+#title {
+  font: 700 1.6rem/2rem roboto;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#subtitle {
+  font: 500 1rem/1.2rem roboto;
+  letter-spacing: 9px;
+  text-align: center;
+}
+
+#tooltip {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #f8f9f8;
+  border-radius: 10px;
+  max-width: 280px;
+  padding: 8px;
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  box-shadow: 4px 4px 10px #444;
+  pointer-events: none;
+}
+
+#overlay {
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 10px;
+  height: 11px;
+  width: 11px;
+  pointer-events: none;
+  border: 1px solid #555;
+}
+
+.dot {
+  stroke: #333;
+}
+
+#x-axis,
+#y-axis {
+  font: 500 0.6rem roboto;
+  letter-spacing: 0.5px;
+}
+
+.x-legend,
+.y-legend {
+  font: 400 0.8rem roboto;
+  letter-spacing: 4px;
+}
+
+.legend-label text {
+  font: 400 0.7rem roboto;
+  letter-spacing: 0.5px;
+  text-anchor: end;
+}
+
+#author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+#author p {
+  font: 400 0.7rem/1rem roboto;
+  letter-spacing: 6px;
+  color: #28d7b8;
+}
+#author p a:link {
+  text-decoration: none;
+  color: #28d7b8;
+}
+#author p a:visited {
+  text-decoration: none;
+  color: #28d7b8;
+}
+#author p a:hover {
+  text-decoration: none;
+  color: #d72847;
+}
+#author p a:active {
+  text-decoration: none;
+  color: #31837a;
+}
