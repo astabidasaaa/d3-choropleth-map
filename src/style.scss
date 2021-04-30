@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+$font-color: #1a1a1a;
+
+html,
+body {
+  overflow: visible;
+  min-width: 100%;
+}
+
+#container {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 3rem 2.5rem 2.5rem;
+  overflow: visible;
+  color: $font-color;
+}
+
+#title {
+  font: 700 3.5rem/3.8rem roboto;
+}
+
+#description {
+  font: 500 1rem/2rem roboto;
+}
+
+#author {
+  text-align: left;
+  margin-top: 0.5rem;
+
+  p {
+    font: 400 0.7rem/1rem roboto;
+    letter-spacing: 5px;
+    color: $font-color;
+  }
+}
+
+heading {
+  margin-bottom: 1rem;
+}
+
+#svgContainer {
+  padding: 1rem;
+
+  svg {
+    .county {
+      &:hover {
+        fill: #333;
+      }
+    }
+
+    .states {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+    }
+  }
+}
+
+#tooltip {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  min-width: 120px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  color: #fff;
+  font: 400 0.8rem/1.2rem roboto;
+  box-shadow: 4px 4px 10px #444;
+  pointer-events: none;
+}
+
+a {
+  &:link {
+    text-decoration: underline;
+    color: $font-color;
+  }
+  &:visited {
+    text-decoration: none;
+    color: $font-color;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #d72847;
+  }
+  &:active {
+    text-decoration: none;
+    color: #31837a;
+  }
+}
+
+#source {
+  align-self: flex-end;
+  font: 400 0.9rem/1.2rem roboto;
+
+  letter-spacing: 1px;
+}
